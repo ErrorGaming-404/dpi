@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* First Menu */
+.firstmenu{
+    background: #1d2026;
+    width: 100%;
+    color: #ffff;
+    position: relative;
+}
+
+/* Logo Position */
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+nav .logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+/* Subject Position */
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+/*Side Bar*/
+/* .side-bar{
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(#1d2026, #00986f);
+    position: absolute;
+    right: 0;
+    top: 0;
+} */
+
+.social-links img, .useful-links img{
+    width: 28px;
+    margin: 5px auto;
+    cursor: pointer;
+    margin-left: 2650%;
+}
+
+.social-links{
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    top: 41%;
+    transform: translateY(-50%);
+}
+
+.useful-links{
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+}
+
+/* About */
+
+.about{
+    width: 100%;
+    padding: 78px 0px;
+    background-color: #1d2026;
+}
+
+.about img{
+    height: auto;
+    width: 420px;
+}
+
+.about-text{
+    width: 550px;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h1{
+    color: #fff;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5{
+    color: #fff;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+span{
+    color: #00986f;
+}
+
+.about-text p{
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+button{
+    background: #00986f;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+button:hover{
+    background: transparent;
+    border: 2px solid #00986f;
+    cursor: pointer;
+}

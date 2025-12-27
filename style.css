@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* First Menu */
+.firstmenu{
+    background: #1d2026;
+    min-height: 100vh;
+    width: 100%;
+    color: #ffff;
+    position: relative;
+}
+
+/* Logo Position */
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+nav .logo{
+    width: 160px;
+    cursor: pointer;
+}
+
+/* Subject Position */
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+/* Button */
+button{
+    background: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+button span{
+    display: block;
+    background: #00986f;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 2px;
+    transition: background 0.5s, margin-left 0.5s;
+}
+
+/* Lamp Container */
+.lamp-container{
+    position: absolute;
+    top: -20px;
+    left: 22%;
+    width: 200px;
+}
+
+.lamp{
+    width: 100%;
+}
+
+.light{
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 300px;
+    margin-left: -10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+/* Animation Circle */
+h1{
+    font-size: 80px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+
+h1::before, h1::after{
+    content: '';
+    padding: 20px;
+    position: absolute;
+    left: -2%;
+    top: 10%;
+    display: block;
+    transform: translateX(-50%) translateY(-50%) rotate(0);
+    animation: spin 6s alternate infinite ease-in-out;
+}
+
+h1::before{
+    border-top: 8px solid #00986f;;
+    border-left: 8px solid #00986f;;
+    z-index: -1;
+}
+
+h1::after{
+    border-bottom: 8px solid #00986f;;
+    border-right: 8px solid #00986f;;
+    z-index: -1;
+}
+@keyframes spin{
+    100%{
+        transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+}
+
+/* Text */
+.text-container{
+    max-width: 600px;
+    margin-top: 7%;
+    margin-left: 50%;
+}
+
+.text-container h1{
+    font-size: 100px;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    background-image: linear-gradient(#ffff, #fff);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -700px 0;
+    animation: backcolour 5s linear infinite alternate;
+}
+
+@keyframes backcolour {
+    100%{
+        background-position: 0 0;
+    }
+}
+
+.text-container a{
+    text-decoration: none;
+    background: #00986f;
+    padding: 14px 50px;
+    display: inline-block;
+    color: #ffff;
+    font-size: 18px;
+    margin-top: 60px;
+    margin-left: 28%;
+    border-radius: 30px;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
+    transition: 0.5s;
+}
+
+.text-container a:hover{
+    color: #000;
+}
+
+.active{
+    background: #00986f;
+}
+
+.active span{
+    background: #ffff;
+    margin-left: 31px;
+}
+
+.on{
+    opacity: 1;
+}
+
+/*Side Bar*/
+/* .side-bar{
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(#1d2026, #00986f);
+    position: absolute;
+    right: 0;
+    top: 0;
+} */
+
+.social-links img, .useful-links img{
+    width: 28px;
+    margin: 5px auto;
+    cursor: pointer;
+    margin-left: 2650%;
+}
+
+.social-links{
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    top: 41%;
+    transform: translateY(-50%);
+}
+
+.useful-links{
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+}
+
+/* Services Menu */
+.servicesmenu{
+    background: #1d2026;
+    width: 100%;
+    color: #ffff;
+    position: relative;
+}
+
+nav .logo_servics{
+    width: 150px;
+    cursor: pointer;
+}
+
+/* Services */
+
+.container{
+    width: 100%;
+    background: #1d2026;
+}
+
+.container h2{
+    color: #fff;
+    font-size: 32px;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.price-row{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 25px;
+}
+
+.price-col{
+    background: #00986f;
+    padding: 10% 15%;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.price-col p{
+    font-size: 22px;
+}
+
+.price-col h3{
+    font-size: 44px;
+    margin: 20px 0 40px;
+    font-weight: 500;
+}
+
+.price-col h3 span{
+    font-size: 16px;
+}
+
+.price-col ul{
+    text-align: left;
+    margin: 20px 0;
+    color: #ddd;
+    list-style: none;
+}
+
+.price-col ul li{
+    margin: 15px 0;
+}
+
+.price-col ul li::before{
+    content: '\2022';
+    color: #1d2026;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.price-col button{
+    width: 100%;
+    padding: 14px 0;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #1d2026;
+    border-radius: 6px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.price-col button:hover{
+    background: #1d2026;
+}
